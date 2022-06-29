@@ -1,7 +1,7 @@
 import { Box } from "components/box/Box";
 import PropTypes from "prop-types";
 import { StatsList, StatsItem, StatsText, StatsValue } from "./Stats.styled";
-import { formatViews } from "../../helpers/formatNumberfValue";
+import { formatViews } from "../../../helpers/formatNumberfValue";
 
 export const Stats = ({ followers, views, likes }) => {
 	return (

@@ -1,6 +1,6 @@
 import { Box } from "components/box/Box";
-import { Description } from "components/description/Description";
-import { Stats } from "../stats/Stats";
+import { Description } from "components/profile/description/Description";
+import { Stats } from "./stats/Stats";
 
 export const Profile = ({ avatar, username, tag, location, followers, views, likes }) => {
 	return (

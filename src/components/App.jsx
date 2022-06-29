@@ -1,7 +1,9 @@
 import { GlobalStyle } from "./base/GlobalStyle";
-import { Profile } from "./profile/Profile";
 import { Box } from "./box/Box";
 import user from "../user.json";
+import data from "../data.json";
+import { Profile } from "./profile/Profile";
+import { Statistics } from "./statistics/Statistics";
 
 export const App = () => {
 	return (
@@ -17,6 +19,7 @@ export const App = () => {
 				views={user.stats.views}
 				likes={user.stats.likes}
 			></Profile>
+			<Statistics title="Upload stats" stats={data}></Statistics>
 		</Box>
 	);
 };
