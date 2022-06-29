@@ -1,13 +1,26 @@
-import { Box } from "./box/Box";
+import { Box } from "components/box/Box";
+import { Friend } from "./Friend";
+import PropTypes from "prop-types";
 
-export const FriendList = () => {
+export const FriendList = ({ friends }) => {
 	return (
 		<Box>
-			<li class="item">
-				<span class="status"></span>
-				<img class="avatar" src="" alt="User avatar" width="48" />
-				<p class="name"></p>
-			</li>
+			<ul>
+				{friends.map(friend => (
+					<Friend key={friend.id} friends={friend} />
+				))}
+			</ul>
 		</Box>
 	);
+};
+
+FriendList.propTypes = {
+	friends: PropTypes.arrayOf(
+		PropTypes.exact({
+			name: PropTypes.string.isRequired,
+			avatar: PropTypes.string.isRequired,
+			isOnline: PropTypes.bool.isRequired,
+			id: PropTypes.number.isRequired,
+		}),
+	),
 };

@@ -4,10 +4,13 @@ export const theme = {
 		white: "#fff",
 		text: "#2a2a2a",
 		background: "#c7c3c3",
+		statusOff: "red",
+		statusOn: "green",
 		primary: "#07c",
 		secondary: "#05a",
 		accent: "#609",
 		muted: "#f6f6f6",
+		tableBg: "#f1f2f3",
 	},
 	space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
 	fonts: {
