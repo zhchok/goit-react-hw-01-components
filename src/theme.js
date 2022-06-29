@@ -29,10 +29,6 @@ export const theme = {
 		normal: 400,
 		bold: 700,
 	},
-	lineHeights: {
-		body: 1.5,
-		heading: 1.125,
-	},
 	borders: {
 		none: "none",
 		normal: "1px solid",
