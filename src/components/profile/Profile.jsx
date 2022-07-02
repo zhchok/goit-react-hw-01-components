@@ -14,8 +14,8 @@ export const Profile = ({ avatar, username, tag, location, followers, views, lik
 			flexDirection="column"
 			justifyContent="space-between"
 		>
-			<Description username={username} avatar={avatar} tag={tag} location={location}></Description>
-			<Stats followers={followers} views={views} likes={likes}></Stats>
+			<Description username={username} avatar={avatar} tag={tag} location={location} />
+			<Stats followers={followers} views={views} likes={likes} />
 		</Box>
 	);
 };

@@ -4,7 +4,7 @@ import { Status, FriendItem } from "./Friend.styled";
 export const Friend = ({ friends: { avatar, name, isOnline } }) => {
 	return (
 		<FriendItem>
-			<Status status={isOnline}></Status>
+			<Status status={isOnline} />
 			<img src={avatar} alt="User avatar" width="48" />
 			<Box ml={4}>
 				<p>{name}</p>
