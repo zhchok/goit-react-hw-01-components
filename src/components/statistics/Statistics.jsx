@@ -6,16 +6,12 @@ import { Title, StatsInfoList } from "./Statistics.styled";
 export const Statistics = ({ stats, title }) => {
 	return (
 		<Box borderX="normal" as="section" width="250px" m="0 auto">
-			{title.length > 0 && (
-				<>
-					<Title>{title}</Title>
-					<StatsInfoList>
-						{stats.map(info => (
-							<StatsInfo key={info.id} stats={info} />
-						))}
-					</StatsInfoList>
-				</>
-			)}
+			{title && <Title>{title}</Title>}
+			<StatsInfoList>
+				{stats.map(info => (
+					<StatsInfo key={info.id} stats={info} />
+				))}
+			</StatsInfoList>
 		</Box>
 	);
 };
